@@ -21,6 +21,7 @@ import {
 import ResponsiveCard from './components/ResponsiveCard';
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import Dialog from "./components/Dialog"
+import ResponsiveGrid from "./components/ResponsiveGrid";
 
 export const App = () => {
 
@@ -30,6 +31,9 @@ export const App = () => {
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" >
+
+          <ResponsiveGrid />
+
           <ColorModeSwitcher justifySelf="flex-start" />
 
           <ResponsiveCard />
